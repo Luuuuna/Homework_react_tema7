@@ -1,0 +1,80 @@
+.App {
+
+  padding: 20px;
+  background-color: rgb(250, 232, 209);
+}
+
+h2 {
+  text-align: center;
+  font-size: 20px;
+  color: navy;
+  margin: 30px 0 30px 0;
+}
+
+h1 span {
+  font-size: 54px;
+  font-weight: 800;
+  color: rgb(10, 10, 83);
+}
+
+.App__header {
+  text-align: center;
+  padding: 20px 30px 30px 30px;
+  background-color: rgb(252, 220, 177);
+  border-radius: 25px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.newsinput {
+  width: 300px;
+}
+
+.button {
+  margin: 30px 0 0 30px;
+  width: 600px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.inform {
+  margin: 30px auto;
+  width: 900px;
+}
+
+li {
+  color: rgb(12, 12, 160);
+}
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
