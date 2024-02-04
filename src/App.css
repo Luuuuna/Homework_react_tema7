@@ -41,10 +41,20 @@ h1 span {
   width: 900px;
 }
 
-li {
+.App__title {
   color: rgb(12, 12, 160);
 }
 
+.pagination {
+  text-align: center;
+  padding: 20px;
+}
+
+.pagination button {
+  margin: 5px;
+  background-color: rgb(250, 232, 209);
+  border: none;
+}
 
 
 

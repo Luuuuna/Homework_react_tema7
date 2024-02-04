@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import './App.css';
 
 
 const App = () => {
@@ -32,7 +32,7 @@ const App = () => {
   };
 
   useEffect(() => {
-    // Fetch the news data again when the currentPage changes
+
     if (news.length > 0) {
       const startIndex = (currentPage - 1) * 5;
       const endIndex = startIndex + 5;
@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <div className="app__header">
+      <div className="App__header">
         <h1>
           Получите самые свежие новости от газеты <br />
           <span>The Guardian!</span>
@@ -67,7 +67,7 @@ const App = () => {
         {news.map((item) => (
           <div key={item.id}>
             <p>{item.sectionId}</p>
-            <a href={item.webUrl}>{item.webTitle}</a>
+            <a className="App__title" href={item.webUrl}>{item.webTitle}</a>
             <p>{item.webUrl}</p>
           </div>
         ))}
@@ -76,7 +76,7 @@ const App = () => {
         {Array.from({ length: totalPages }).map((_, index) => (
           <button
             key={index}
-            className={`page-button${currentPage} === index + 1 ? " active" : ""}`}
+            className={`page-button${currentPage} === index + 1 ? " active" : }`}
             onClick={() => handlePageChange(index + 1)}
           >
             {index + 1}
