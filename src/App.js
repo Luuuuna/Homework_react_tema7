@@ -47,15 +47,15 @@ const App = () => {
         <button type="submit" className="button">Submit</button>
       </form>
       </div>
-      <ol className="inform">
+      <div className="inform">
         {news.map((item) => (
-          <li key={item.id}>
+          <div key={item.id}>
              <p>{item.sectionId}</p>
             <a href={item.webUrl}>{item.webTitle}</a>
               <p>{item.webUrl}</p> 
-          </li>
+          </div>
         ))}
-      </ol>
+      </div>
 
     </div>
   );
